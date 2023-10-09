@@ -1,0 +1,29 @@
+{
+    "name": "colorful_drop_game",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "colorful_drop_game",
+    "workspaceFolder": "/usr/local/apache2/htdocs",
+    "remoteUser": "morisaki",
+    "forwardPorts": [
+        80
+    ],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "editor.formatOnSave": true,
+                "editor.rulers": [],
+                "files.exclude": {},
+                "files.watcherExclude": {}
+            },
+            "extensions": [
+                "donjayamanne.githistory",
+                "eamodio.gitlens",
+                "oderwat.indent-rainbow",
+                "gruntfuggly.todo-tree"
+            ]
+        }
+    }
+}

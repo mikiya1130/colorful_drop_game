@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  colorful_drop_game:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+      args:
+        - USERNAME=${USERNAME}
+        - USER_UID=${USER_UID}
+    volumes:
+      - ../:/usr/local/apache2/htdocs
+    ports:
+      - 8080:80
+    tty: true

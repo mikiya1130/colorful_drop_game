@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons+Outlined);
+
+:root {
+    --main-color: #1d1d1d;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    display: block;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu-button {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    color: var(--main-color);
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    transition: transform .2s;
+}
+
+.menu-button:active {
+    transform: scale(.95);
+}
+
+.menu-button-small {
+    width: 60%;
+    padding: 0.5rem;
+    align-self: center;
+}
+
+.rotate-button {
+    position: absolute;
+    background-size: cover;
+    border: 10px solid var(--main-color);
+    border-radius: 20px;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.rotate-button-left {
+    background-image: url('assets/rotate_arrow.png');
+    transform: scaleX(-1);
+    left: 30px;
+    bottom: 30px;
+}
+
+.rotate-button-right {
+    background-image: url('assets/rotate_arrow.png');
+    right: 30px;
+    bottom: 30px;
+}
+
+.start-text,
+.clear-text {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 5rem;
+    text-align: center;
+    color: red;
+    margin: 0;
+}
+
+.clear-time {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+    text-align: center;
+    color: red;
+    margin: 0;
+}
+
+.how-to-play-steps {
+    padding: 1rem;
+    padding-left: 3rem;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+}
+
+.icon-play::before {
+    font-family: 'Material Icons Outlined';
+    content: '\e039';
+}
+
+.icon-book::before {
+    font-family: 'Material Icons Outlined';
+    content: '\e0e0';
+}
+
+.icon-easy::before {
+    font-family: 'Material Icons Outlined';
+    content: '\e838\f06f\f06f';
+}
+
+.icon-normal::before {
+    font-family: 'Material Icons Outlined';
+    content: '\e838\e838\f06f';
+}
+
+.icon-hard::before {
+    font-family: 'Material Icons Outlined';
+    content: '\e838\e838\e838';
+}
+
+.icon-return::before {
+    font-family: 'Material Icons Outlined';
+    content: '\e5c4';
+}
